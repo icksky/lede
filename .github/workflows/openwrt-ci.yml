@@ -54,11 +54,12 @@ jobs:
           sudo -E apt-get -y autoremove --purge
           sudo -E apt-get clean
 
-      - name: Add Serverchan
+      - name: 自定义功能
         run: |
-          cd package/lean
-          git clone https://github.com/tty228/luci-app-serverchan.git
-          cd ../../
+          cd package
+          mkdir openwrt-packages
+          cd openwrt-packages
+          git clone https://github.com/KFERMercer/luci-app-serverchan
 
       - name: Update feeds
         run: |

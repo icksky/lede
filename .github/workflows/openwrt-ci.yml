@@ -196,6 +196,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-zerotier is not set
           # CONFIG_DEFAULT_luci-app-wifischedule is not set
           # CONFIG_PACKAGE_luci-app-vlmcsd is not set
+          # CONFIG_PACKAGE_luci-app-adbyby-plus is not set
           # CONFIG_PACKAGE_kmod-phy-bcm-ns-usb3 is not set
           # CONFIG_PACKAGE_kmod-usb3 is not set
           EOF

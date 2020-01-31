@@ -112,8 +112,10 @@ jobs:
           # CONFIG_TARGET_BOARD="bcm53xx"
           # NEWIFI D2
           CONFIG_TARGET_ramips=y
+          CONFIG_TARGET_ramips_mt7621=y
           CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
           CONFIG_TARGET_BOARD="ramips"
+          CONFIG_PACKAGE_node=y
           EOF
 
           # 固件压缩:

@@ -106,9 +106,14 @@ jobs:
 
           # 编译x64固件:
           cat >> .config <<EOF
-          CONFIG_TARGET_bcm53xx=y
-          CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
-          CONFIG_TARGET_BOARD="bcm53xx"
+          # K3
+          # CONFIG_TARGET_bcm53xx=y
+          # CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
+          # CONFIG_TARGET_BOARD="bcm53xx"
+          # NEWIFI D2
+          CONFIG_TARGET_ramips=y
+          CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2=y
+          CONFIG_TARGET_BOARD="ramips"
           EOF
 
           # 固件压缩:
